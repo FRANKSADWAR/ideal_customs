@@ -1,7 +1,8 @@
 ## Ideal Customs
+ERPNext Customizations for Ideal Inks
 
-Customizations for Ideal Inks
+#### Download the app
+bench get-app https://github.com/FRANKSADWAR/ideal_customs\
 
-#### License
-
-MIT
+#### Install the app
+bench --site <site-name> install-app ideal_customs

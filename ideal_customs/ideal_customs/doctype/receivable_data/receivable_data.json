@@ -16,14 +16,14 @@
   "credit_note",
   "outstanding",
   "invoiced_grand_total",
+  "total_due",
   "due_date",
   "range1",
   "range2",
   "range3",
   "range4",
   "range5",
-  "age",
-  "total_due"
+  "age"
  ],
  "fields": [
   {
@@ -68,7 +68,7 @@
   },
   {
    "fieldname": "invoiced_grand_total",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "label": "invoiced_grand_total"
   },
   {
@@ -115,7 +115,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-02-23 22:58:00.757449",
+ "modified": "2025-02-24 11:26:47.168462",
  "modified_by": "Administrator",
  "module": "Ideal Customs",
  "name": "Receivable Data",

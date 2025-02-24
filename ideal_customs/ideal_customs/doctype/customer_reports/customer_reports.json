@@ -1,6 +1,6 @@
 {
  "actions": [],
- "allow_rename": 1,
+ "autoname": "CR-.MM.-.YYYY.-.#####",
  "creation": "2025-02-23 22:46:18.459411",
  "default_view": "List",
  "doctype": "DocType",
@@ -10,7 +10,10 @@
   "customer_name",
   "posting_date",
   "statement",
-  "amended_from"
+  "amended_from",
+  "total_invoiced_amount",
+  "total_paid",
+  "total_credit_note"
  ],
  "fields": [
   {
@@ -24,7 +27,8 @@
   {
    "fieldname": "posting_date",
    "fieldtype": "Date",
-   "label": "Posting Date"
+   "label": "Posting Date",
+   "reqd": 1
   },
   {
    "fieldname": "statement",
@@ -41,15 +45,35 @@
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
+  },
+  {
+   "fieldname": "total_invoiced_amount",
+   "fieldtype": "Float",
+   "label": "Total Invoiced Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_paid",
+   "fieldtype": "Float",
+   "label": "Total Paid",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_credit_note",
+   "fieldtype": "Float",
+   "label": "Total Credit Note",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-02-23 22:58:19.194700",
+ "modified": "2025-02-24 11:38:25.938933",
  "modified_by": "Administrator",
  "module": "Ideal Customs",
  "name": "Customer Reports",
+ "name_case": "UPPER CASE",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {

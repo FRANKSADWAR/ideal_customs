@@ -1,5 +1,6 @@
 import frappe
 from erpnext.accounts.report.accounts_receivable.accounts_receivable import execute
+from erpnext.accounts.report.accounts_receivable_summary.accounts_receivable_summary import execute as summary_execute
 
 
 @frappe.whitelist(allow_guest=True)
@@ -18,3 +19,7 @@ def get_report(customer: str):
     }
     report = execute(filters)
     return report
+
+@frappe.whitelist(allow_guest= True)
+def get_receivable_summary(allow_guest = True):
+    pass
